@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: font;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.logo {
+    border: none;
+    border-radius: 32px;
+    width: 400px;
+    height: 400px;
+    transition: 0.5s;
+}
+
+.logoname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.name {
+    margin-right: auto;
+    font-size: 60px;
+
+}
+
+
+@font-face {
+    font-family: font;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+.content-logoname {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.logo:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 1px solid white;
+}
+
+
+li {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.en {
+    background-color: rgb(0, 0, 131);
+    border-radius: 16px;
+    transition: 0.5s;
+}
+
+.he {
+    border-radius: 16px;
+    transition: 0.5s;
+}
+
+.ru {
+    border-radius: 16px;
+    transition: 0.5s;
+}
+
+.en:hover {
+    cursor: pointer;
+}
+
+.ru:hover {
+    cursor: pointer;
+}
+
+.he:hover {
+    cursor: pointer;
+}
+
+.down {
+    text-align: center;
+    transform: rotate(90deg);
+    font-size: 50px;
+}
+
+.earned {
+    background-color: black;
+    border-radius: 16px;
+    border: 1px solid white;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+}
+
+.projects {
+    background-color: black;
+    border-radius: 16px;
+    border: 1px solid white;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+}
+
+.cards {
+    display: flex;        /* включает флекс-контейнер */
+    justify-content: center; /* выравнивание по центру */
+    gap: 20px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.money {
+    font-size: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* слегка снизу */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+button {
+    width: 450px;
+    height: 150px;
+    border-radius: 16px;
+    background-color: rgb(0, 0, 203);
+    color: white;
+    border: none;
+    font-size: 50px;
+    font-family: font;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 255, 0.266);
+    transition: 0.5s;
+}
