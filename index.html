@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GucksimHere - Start your dream project!</title>
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="icon" type="png/jpg" href="https://i.ibb.co/wh8R9rNN/gucksimlogo-2.png">
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyATuV2_uUsHzsRS4kF0LdUFDpqwOWeQnkI",
+    authDomain: "gucksimhere.firebaseapp.com",
+    projectId: "gucksimhere",
+    storageBucket: "gucksimhere.firebasestorage.app",
+    messagingSenderId: "927179432257",
+    appId: "1:927179432257:web:722d448ffe53394ddc01c0",
+    measurementId: "G-85W8CZSH7M"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+        <center>
+    <div class="navup">
+        <h1>GucksimHere</h1>
+        <div class="badges">
+        <span class="badge">👑Technoblade... never dies!❤️ We will never forget you.</span>
+        </div>
+        <ul>
+            <li><a onclick="changeLanguage1()" class="en" id="en">EN</a></li>
+            <li><a onclick="changeLanguage2()" class="he" id="he">HE</a></li>
+            <li><a onclick="changeLanguage3()" class="ru" id="ru">RU</a></li>
+            <li><a href="#en">Home</a></li>
+            <li><a href="#down">About</a></li>
+            <li><a href="#plans">Plans</a></li>
+        </ul>
+    </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content-logoname">
+            <div class="logoname">
+                <img id="logo" class="logo" src="https://i.ibb.co/wh8R9rNN/gucksimlogo-2.png" onclick="changeBorder()">
+                <h1 class="name" id="name">GucksimHere - Start your dream project!</h1>
+            </div>
+        </div>
+        <p class="pluses" id="pluses">Modern Solutions</p>
+        <center>
+        <a href="#down"><button class="down">»</button></a>
+        </center>
+        <br>
+        <br>
+        <div class="about" id="down">
+            <h1 id="about-me">About me</h1>
+            <center>
+            <div class="card">
+                <p class="pcard" id="pcard">Hi! I am passionate about web development and JavaScript. I love creating interactive websites, experimenting with HTML, CSS and JS, making projects interesting and functional.</p>
+            </div>
+            </center>
+        </div>
+        <br>
+<div class="cards">
+    <div class="earned">
+            <h1 id="earned">💵Money Earned:</h1>
+            <h1 class="money">0€</h1>
+        </div>
+        <div class="earned">
+            <h1 class="money">2 years</h1>
+            <p>of coding</p>
+        </div>
+    <div class="projects">
+            <h1 id="projects">🔷Projects Created:</h1>
+            <h1 class="money">1</h1>
+            
+        </div>
+</div>
+<br>
+<br>
+<br>
+
+<h1 class="plansh1" id="planh1">Plans</h1>
+
+<div class="plans">
+    <div class="plancard" id="plans">
+        <span class="badge" id="popular">Most Popular</span>
+        <br>
+        <img class="svgplan" src="images/book_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+        <h1 class="planname" id="portfolio">Portfolio</h1>
+        <h2 class="cost"><p class="perproject" id="minimumcost">minimum cost</p>10 EUR (in SOL)<p class="perproject" id="perproject">/ project</p></h2>
+        <p class="desc" id="descportfolio">Modern, responsive website with a clean design to showcase your portfolio, projects, bio, contact info, and social links. Easily customizable for self-presentation and attracting clients.</p>
+        <br>
+        <a href="thourghpayment.html"><button class="buy" id="buy2">Order</button></a>
+    </div>
+
+    <div class="plancard" id="plans">
+        <span class="badge" id="new">New</span>
+        <br>
+        <img class="svgplan" src="images/code_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+            
+        <h1 class="planname" id="frontend">Frontend</h1>
+
+        <h2 class="cost"><p class="perproject" id="mincost">minimum cost</p>25 EUR (in SOL)<p class="perproject" id="perproject2">/ project</p></h2>
+        <p class="desc" id="descfrontend">Create adaptive and interactive websites using HTML, CSS, and JavaScript. Build beautiful pages, interactive elements, and mini-apps for any device. Basic Firebase integration for user authorization and data storage.</p>
+        <br>
+
+
+        
+        <a href="thourghpayment.html"><button class="buy" id="buy">Order</button></a>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<div class="downbar">
+    <p class="copyright">Gucksim / Maxim Bakuley © All rights reserved</p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
