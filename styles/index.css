@@ -1,0 +1,378 @@
+body {
+    background: linear-gradient(300deg,#000000,#2f0000);
+    background-size: 180% 180%;
+    animation: gradient-animation 30s ease infinite;
+    font-family: font;
+    color: white;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo {
+    border: none;
+    border-radius: 32px;
+    width: 400px;
+    height: 400px;
+    transition: 0.5s;
+}
+
+.logoname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    background: -webkit-radial-gradient(#ff0000, #5a0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.name {
+    margin-right: auto;
+    font-size: 60px;
+
+}
+
+
+
+
+.content-logoname {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.logo:hover {
+    transition: 0.5s;
+    border-radius: 1px solid white;
+}
+
+
+li {
+    float: left;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    width: max-content;      /* лучше, чем fit-content для совместимости */
+    margin: 0 auto;          /* центрируем блок */
+    padding: 20px 16px;      /* не даём схлопнуться по высоте */
+    color: #fff;
+    border-radius: 12px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.en {
+    background-color: rgb(0, 0, 131);
+    border-radius: 16px;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.he {
+    border-radius: 16px;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ru {
+    border-radius: 16px;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.en:hover {
+    cursor: pointer;
+}
+
+.ru:hover {
+    cursor: pointer;
+}
+
+.he:hover {
+    cursor: pointer;
+}
+
+.down {
+    text-align: center;
+    transform: rotate(90deg);
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.earned {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.earned:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.289);
+    transition: 0.5s;
+    width: 550px;
+    height: 350px;
+}
+
+.projects {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.projects:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.289);
+    transition: 0.5s;
+    width: 550px;
+    height: 350px;
+}
+
+.cards {
+    display: flex;        /* включает флекс-контейнер */
+    justify-content: center; /* выравнивание по центру */
+    gap: 20px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.money {
+    font-size: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* слегка снизу */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+button {
+    width: 450px;
+    height: 150px;
+    border-radius: 16px;
+    background-color: rgb(0, 0, 203);
+    color: white;
+    border: none;
+    font-size: 50px;
+    font-family: font;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 255, 0.266);
+    transition: 0.5s;
+}
+
+.including {
+    text-align: center;
+}
+
+#cursor {
+  position: fixed;
+  pointer-events: none;
+  font-size: 50px; /* размер текста-курсора */
+  color: red;      /* цвет */
+  transform: translate(-50%, -50%); /* чтобы символ был по центру */
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+    background: -webkit-linear-gradient(#ff0000, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pluses {
+    font-size: 20px;
+    background: -webkit-radial-gradient(#ff0000, #870000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.289);
+    transition: 0.5s;
+}
+
+a {
+    cursor: pointer;
+}
+
+.plancard {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+    width: 400px;
+    height: 520px;
+    transition: 0.5s;
+    font-size: 30px;
+    text-align: center;
+}
+
+.plancard:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.289);
+    transition: 0.5s;
+}
+
+.plans {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.plansh1 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    background: -webkit-radial-gradient(#fff700, #ddff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 
+        0 0 5px rgba(255, 251, 0, 0.432),
+        0 0 10px rgba(255, 251, 0, 0.432),
+        0 0 20px rgba(255, 251, 0, 0.432),
+        0 0 40px rgba(255, 251, 0, 0.432),
+        0 0 80px rgba(255, 251, 0, 0.432);
+}
+
+.svgplan {
+    width: 80px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.337);
+}
+
+.planname {
+    font-size: 30px;
+}
+
+.perproject {
+    font-size: 10px;
+}
+
+.cost {
+    text-align: center;
+}
+
+.buy {
+    background: linear-gradient( rgb(10, 204, 0) 0%, rgb(54, 130, 0) 100%);
+    text-shadow: 5px 5px 10px black;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+}
+
+.buy:hover {
+    box-shadow: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.desc {
+    font-size: 14px;
+}
+
+.buycoming {
+    background: linear-gradient( rgb(247, 0, 0) 0%, rgb(130, 0, 0) 100%);
+    text-shadow: 5px 5px 10px black;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+}
+
+.buycoming:hover {
+    box-shadow: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.badge {
+    top: 10px;    /* отступ сверху */
+    right: 10px;  /* отступ справа */
+    background: linear-gradient( rgba(255, 115, 115, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+.badges {
+    list-style: none;
+    width: max-content;      /* лучше, чем fit-content для совместимости */
+    margin: 0 auto;          /* центрируем блок */
+    padding: 20px 16px;      /* не даём схлопнуться по высоте */
+    color: #fff;
+    border-radius: 12px;
+}
+
+.badges .badge {
+    top: 10px;    /* отступ сверху */
+    right: 10px;  /* отступ справа */
+    background: linear-gradient( rgb(115, 122, 255) 0%, rgb(0, 38, 255) 100%);
+    color: white;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}

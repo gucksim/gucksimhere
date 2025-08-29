@@ -1,0 +1,9 @@
+@font-face {
+    font-family: hebrew;
+    src: url(hebrew.ttf);
+}
+
+@font-face {
+    font-family: font;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}

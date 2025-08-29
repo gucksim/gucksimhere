@@ -1,0 +1,84 @@
+#submitBtn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: linear-gradient(90deg,rgba(71, 71, 71) 0%, rgba(117, 117, 117) 100%);
+    transition: 0.5s
+    
+}
+
+#submitBtn:hover {
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+#submitBtn.enabled {
+    background: linear-gradient(90deg, rgb(97, 176, 255) 0%, rgb(45, 83, 189) 100%);
+    cursor: pointer;
+  }
+
+
+#submitBtn2 {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: linear-gradient(90deg,rgba(71, 71, 71) 0%, rgba(117, 117, 117) 100%);
+    transition: 0.5s
+    
+}
+
+#submitBtn2:hover {
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+#submitBtn2.enabled {
+    background: linear-gradient(90deg, rgb(64, 0, 183) 0%, rgb(45, 83, 189) 100%);
+    cursor: pointer;
+  }
+
+
+
+.variants {
+    width: 500px;
+    height: 700px;
+    border-radius: 16px;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1); /* прозрачный фон */
+    backdrop-filter: blur(10px); /* размытие фона */
+    -webkit-backdrop-filter: blur(10px); /* для Safari */
+    border-radius: 15px; /* скруглённые углы */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* тонкая белая рамка */
+    padding: 20px;
+    color: white;
+}
+
+
+
+.poweredby {
+    color: white;
+    font-size: 10px;
+}
+
+body {
+  background: linear-gradient(300deg,#000000,#2f0000);
+  background-size: 180% 180%;
+  animation: gradient-animation 30s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.disclaimer {
+    color: white;
+    font-size: 10px;
+}
